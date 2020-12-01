@@ -45,8 +45,10 @@ install_aws() {
   mv $TMPDIR/aws_install/v2/$version/dist $ASDF_INSTALL_PATH
 
   echo "cleaning..."
-  # echo "rm -rf $TMPDIR/aws $TMPDIR/aws_install $TMPDIR/aws_link"
-  rm -rf $TMPDIR/aws $TMPDIR/aws_install $TMPDIR/aws_link
+  # echo "rm -rf $TMPDIR/aws, $TMPDIR/aws_install, $TMPDIR/aws_link"
+  rm -rf $TMPDIR/aws
+  rm -rf $TMPDIR/aws_install
+  rm -rf $TMPDIR/aws_link
   # echo "rm -f $TMPDIR/awscli.zip"
   rm -f $TMPDIR/awscli.zip
 }
